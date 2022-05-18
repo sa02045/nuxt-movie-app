@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <CBox d="flex" w="100vw" h="100vh" flex-dir="column">
-      <CHeading text-align="center" mb="4"> 영화 검색기 </CHeading>
+      <CHeading text-align="center" mb="4"> keyword 검색기 </CHeading>
       <CFlex justify="center" align="center">
         <CInput
           placeholder="영화를 검색하세요"
@@ -9,7 +9,7 @@
           w="50vw"
           v-model="keyword"
         />
-        <NuxtLink :to="`/movies/keyword/${keyword}`">
+        <NuxtLink to="/movies/">
           <CButton left-icon=""> 검색 </CButton>
         </NuxtLink>
       </CFlex>

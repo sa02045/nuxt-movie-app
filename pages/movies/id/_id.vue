@@ -9,7 +9,7 @@
           w="50vw"
           v-model="keyword"
         />
-        <NuxtLink :to="`/movies/keyword/${keyword}`">
+        <NuxtLink to="/movies/">
           <CButton left-icon=""> 검색 </CButton>
         </NuxtLink>
       </CFlex>
